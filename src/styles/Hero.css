@@ -1,0 +1,116 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px; /* pt-20 */
+  padding-left: 24px;
+  padding-right: 24px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-left: var(--spacing-margin-desktop);
+    padding-right: var(--spacing-margin-desktop);
+  }
+}
+
+.hero-grid {
+  max-width: var(--spacing-container-max);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: var(--spacing-gutter);
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.hero-content {
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    grid-column: span 8;
+  }
+}
+
+.hero-title {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-stack-md);
+}
+
+.hero-title-accent {
+  color: var(--color-secondary);
+}
+
+.hero-description {
+  color: var(--color-on-surface-variant);
+  margin-bottom: var(--spacing-stack-lg);
+  max-width: 672px; /* max-w-2xl */
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--spacing-stack-md);
+  margin-top: var(--spacing-stack-lg);
+}
+
+.hero-btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 16px 32px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn-primary:hover {
+  background-color: var(--color-on-surface-variant);
+}
+
+.hero-btn-ghost {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 16px 32px;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-btn-ghost:hover {
+  background-color: var(--color-surface-container);
+}
+
+.hero-background-glow {
+  position: absolute;
+  right: -10%;
+  top: 20%;
+  width: 50%;
+  height: 60%;
+  display: none;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .hero-background-glow {
+    display: block;
+  }
+}
+
+.hero-glow-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(108, 248, 187, 0.2) 0%, rgba(211, 228, 254, 0.3) 100%);
+  filter: blur(64px); /* blur-3xl */
+}
