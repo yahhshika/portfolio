@@ -176,3 +176,128 @@
 .contact-form-btn:active {
   transform: scale(0.98);
 }
+
+/* my adds */
+/* .contact-form-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #111827;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.contact-link:hover {
+  transform: translateY(-3px);
+  background: #111827;
+  color: white;
+  border-color: #111827;
+} */
+
+
+
+.connect-card {
+  padding: 3rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.connect-header h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.connect-header p {
+  color: #6b7280;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.connect-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.connect-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.connect-link:hover {
+  transform: translateX(8px);
+  border-color: #111827;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.connect-link h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.connect-link p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.arrow {
+  margin-left: auto;
+  font-size: 1.2rem;
+  transition: transform .3s ease;
+}
+
+.connect-link:hover .arrow {
+  transform: translateX(6px);
+}
+
+.response-note {
+  margin-top: 2rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
