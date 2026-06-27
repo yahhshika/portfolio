@@ -43,6 +43,17 @@ import '../styles/Projects.css';
 // ];
 const PROJECTS_DATA = [
   {
+    title: "GolfGiving",
+    tags: ["MERN STACK", "CHARITY PLATFORM"],
+    description:
+      "A full-stack charity subscription and donation platform with JWT authentication, role-based dashboards, subscription management, charity administration, and randomized donation draw workflows powered by scalable REST APIs.",
+    tech: ["React", "MongoDB", "Express", "Node"],
+    image: "/golfGiving.jpeg",
+    imageAlt:
+      "GolfGiving dashboard showcasing charity subscriptions, donation management, and admin draw features.",
+    link: "https://golf-gving.vercel.app/",
+  },
+  {
     title: "EduPredict",
     tags: ["MERN STACK", "DATA ANALYTICS"],
     description:
